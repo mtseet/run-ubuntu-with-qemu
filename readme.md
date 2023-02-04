@@ -26,7 +26,7 @@ cd ~/ubuntu-vm
 Install dpendencies
 
 ```
-sudo apt install qemu-system-x86 qemu-utils ovmf
+sudo apt install qemu-system-x86 qemu-utils ovmf libguestfs-tools
 ```
 
 Download ubuntu cloud image
@@ -39,7 +39,6 @@ Prepare virtual hard disk and change root password
 ```
 cp ubuntu-22.04-minimal-cloudimg-amd64.img ubuntu-x64.img
 
-sudo apt install libguestfs-tools
 virt-customize -a ubuntu-x64.img --root-password password:YOUR-PASSWORD
 ```
 
