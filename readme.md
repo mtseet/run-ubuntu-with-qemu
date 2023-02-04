@@ -8,8 +8,10 @@ Describes the commands and steps to run an ubuntu virtual machine using qemu
 
 ## Dependencies
 
-qemu emualtor
+qemu emulator
+
 ovmf firmware
+
 ubuntu cloud image
 
 ## Usage
@@ -33,7 +35,7 @@ Download ubuntu cloud image
 wget https://cloud-images.ubuntu.com/minimal/releases/jammy/release/ubuntu-22.04-minimal-cloudimg-amd64.img
 ```
 
-Prepase virtual hard disk and change root password
+Prepare virtual hard disk and change root password
 ```
 cp ubuntu-22.04-minimal-cloudimg-amd64.img ubuntu-x64.img
 
